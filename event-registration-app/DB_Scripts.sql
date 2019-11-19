@@ -1,3 +1,6 @@
+--Scripts to Create Schema or DB "-
+CREATE DATABASE `spk-mysql-db`;
+
 -- Scripts to Create DB Table :-
 
 CREATE TABLE `audience` (
@@ -7,4 +10,4 @@ CREATE TABLE `audience` (
   `email` varchar(45) NOT NULL,
   `mobile` varchar(15) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+);
