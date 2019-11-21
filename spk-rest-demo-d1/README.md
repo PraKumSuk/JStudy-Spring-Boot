@@ -25,6 +25,7 @@ Docker Instructions :-
 - CD to the root of the project directory
 - To build a docker image run below cmd
 	docker build -t praveespkjava/spk-rest-demo-d1-app:spkv1.0 .
+	
   Note : Its a best practise to have the image name in the format 'dockerUserName/actualAppName:tagOrVersionName'
 	i.e. in the above example 'praveespkjava' is the docker hub username, 'spk-rest-demo-d1-app' is the app name and 			'spkv1.0' is the tag/version name. 
 	Also note that if the tag name is not provided by default docker would add it as 'latest'
@@ -35,5 +36,6 @@ Docker Instructions :-
 	Visibility : Public
 - To push the image to repository run below cmd from terminal
 	docker push praveespkjava/spk-rest-demo-d1-app:spkv1.0
+	
   Note : Image name is praveespkjava/spk-rest-demo-d1-app:spkv1.0.
 	Image name can be verified by running docker image ls
