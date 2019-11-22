@@ -47,6 +47,7 @@ Docker Instructions :-
 
 
 	docker run    -p 8082:8080 -t <image_name>:<tagOrVersionName> //attached mode
+	
 	docker run -d -p 8082:8080 -t <image_name>:<tagOrVersionName> //detached mode note -d
 	
 	Note : 
