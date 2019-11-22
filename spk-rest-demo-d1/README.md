@@ -45,22 +45,26 @@ Docker Instructions :-
 
 - To run a image or start a container
 
+
 	docker run    -p 8082:8080 -t <image_name>:<tagOrVersionName> //attached mode
 	docker run -d -p 8082:8080 -t <image_name>:<tagOrVersionName> //detached mode note -d
 	
-		Note : 
-			You can now access application in port 8082 i.e. 0.0.0.0:8082->8080/tcp means port 8082 of host should route all its requests to container through port 8080.
-			For above port to work, you should not have any other port conf in your app conf or properties
-			Container will be given some default names like love, ugle, scientist names etc incase you need some names you specify using --name 
-			This will start container in attached mode i.e. app uses the same docker terminal to run and to exit you press ctrl+c which stops the container as well.
-			Untill this no further docker cmds can be executed or you need to open a new terminal
-			Incase you need a volume/mount specify -v /hostpath:/containerpath for e.g. -v /temp/data:/data
+	Note : 
+	You can now access application in port 8082 i.e. 0.0.0.0:8082->8080/tcp means port 8082 of host should route all its requests to container through port 8080. 
+	For above port to work, you should not have any other port conf in your app conf or properties
+	Container will be given some default names like love, ugle, scientist names etc incase you need some names you specify using --name 
+	This will start container in attached mode i.e. app uses the same docker terminal to run and to exit you press ctrl+c which stops the container as well.
+	Untill this no further docker cmds can be executed or you need to open a new terminal
+	Incase you need a volume/mount specify -v /hostpath:/containerpath for e.g. -v /temp/data:/data
 	
 - To view all running containers or docker ports
+
 docker ps
 
 - To stop a container
+
 docker stop <container_Id>
 
 - To remove a image
+
 docker image  rm <image_name> -f
