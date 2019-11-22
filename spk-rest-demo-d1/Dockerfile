@@ -9,10 +9,6 @@ LABEL maintainer="pravee.spk.java@gmail.com"
 # this will need to be mounted with the OS to verify or check app logs
 VOLUME /tmp
 
-# Port exposed to outside world.
-# Note this is diff from App port which is set to run in 8082
-EXPOSE 8080
-
 # The actual executable or the app jar file
 ARG SPK_REST_DEMO_D1_APP_JAR_FILE=target/spk-rest-demo-d1-app-0.0.1-SNAPSHOT.jar
 
