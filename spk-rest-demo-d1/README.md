@@ -22,7 +22,9 @@ Unit Tests :-
 - App unit tests added in SpkRestDemoD1AppTest.java class
 
 Docker Instructions :-
-- CD to the root of the project directory
+- CD to the root of the project directory and do a maven clean package to package and ensure all depdencies
+	mvn clean package
+
 - To build a docker image run below cmd
 
 	docker build -t praveespkjava/spk-rest-demo-d1-app:spkv1.0 .
