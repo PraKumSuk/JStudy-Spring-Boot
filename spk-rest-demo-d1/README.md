@@ -23,7 +23,8 @@ Unit Tests :-
 
 Docker Instructions :-
 - CD to the root of the project directory and do a maven clean package to package and ensure all depdencies
-	mvn clean package
+
+	mvn clean install --server.port=8082 --spring.profiles.active=dev
 
 - To build a docker image run below cmd
 
